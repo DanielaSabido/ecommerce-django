@@ -442,7 +442,7 @@ p:last-child {
 }
 
 .widget-header {
-  display: inline-block;
+  display:inline-block;
   vertical-align: middle;
   position: relative;
 }
