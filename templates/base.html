@@ -26,6 +26,9 @@
 
   <!-- custom javascript -->
   <script src="{%static 'js/script.js'%}" type="text/javascript"></script>
+  <!-- Include the PayPal JavaScript SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=ARidowCnvwUXfo-tYHz-1iAd5KGuPzhe_W6nuP2k4zBYA9ztSztYUv0mxuKe57wi9hIoGIqLFvkqsgn6&currency=MXN"></script>
+
 
   <script type="text/javascript">
     /// some script
@@ -33,6 +36,9 @@
     // jquery ready start
     $(document).ready(function() {
       // jQuery code
+      setTimeout(function(){
+        $('#message').fadeOut('slow')
+      }, 4000)
 
     });
     // jquery end

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'carts',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -134,6 +135,18 @@ STATICFILES_DIRS=[
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+#para las alertas
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS ={
+    messages.ERROR:'danger'
+}
+
+#para el email que se enviara de autenticacion
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_PORT= 587
+EMAIL_HOST_USER='danielasabido07@gmail.com'
+EMAIL_HOST_PASSWORD='vmxw sojd zwsz wfxs'
+EMAIL_USE_TLS=True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
